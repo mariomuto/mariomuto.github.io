@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aiuto</title>
+
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui.hot/jquery-ui.css">
+
+    <script type="text/javascript" src="js/core/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.hot/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#accordion").accordion({
+                heightStyle : "content",
+                active : false,
+                collapsible : true,
+                animate: 300
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <h1 style="text-align: center"><mark>GUIDA AL PRIMO UTILIZZO</mark></h1>
+    <p style="font-size: x-large">
+        <strong>La web application è strutturata come segue:</strong><br>
+        Viene inizialmente richiesto di inserire l'importo nella casella di inserimento, in seguito nei successivi menù a tendina selezionare la
+        voce in cui si desidera collocare l'importo inserito. Infine selezionare <strong>DARE</strong> o <strong>AVERE</strong> e fare click su
+        <strong>INSERISCI</strong> per effettuare l’inserimento. Il pulsante <strong>VISUALIZZA</strong> mostra tutto
+        ciò che è stato inserito fino a quel momento nei mastrini, mentre con il pulsante <strong>CALCOLA</strong> viene visualizzato il bilancio
+        completo dello stato patrimoniale e del conto economico. Inoltre se erroneamente venisse inserito un importo sbagliato o
+        semplicemente si desiderasse azzerare una singola voce, basta inserire lo stesso importo cambiato di segno, cioè inserirlo
+        in <strong>DARE</strong> o <strong>AVERE</strong> opposto alla scelta fatta in precedenza. L'importo deve essere inserito utilizzando come
+        separatore decimale la virgola (se il numero contiene decimali) e utilizzando il punto (se l’utente lo desidera) come indicatore delle migliaia.
+        Inoltre con il pulsante <strong>Cronologia</strong> è possibile visualizzare la cronologia degli inserimenti con indizazione numerica progressiva
+        relativa all'interno bilancio.
+        Di seguito è riportato uno schema del bilancio per consentire all’utente di orientarsi meglio tra le varie voci:
+    </p>
+</div>
+
+<div id="accordion">
+    <h3 style="text-align: center">Stato Patrimoniale</h3>
+    <div>
+        <center>
+            <table class="display" style="text-align: center">
+                <tbody>
+                <tr>
+                    <th>ATTIVO</th>
+                </tr>
+
+                <tr>
+                    <th>A) Crediti verso soci per versamenti ancora dovuti</th>
+                </tr>
+
+                <tr>
+                    <th>B) Immobilizzazioni</th>
+                </tr>
+                <tr>
+                    <th>1) Immateriali</th>
+                </tr>
+                <tr>
+                    <td><li>Costi di impianto e di ampliamento</li></td>
+                </tr>
+                <tr>
+                    <td><li>Costi di ricerca, sviluppo e di pubblicità</li></td>
+                </tr>
+                <tr>
+                    <td><li>Diritti di brevetto industriale</li></td>
+                </tr>
+                <tr>
+                    <td><li>Concessioni, licenze, marchi, diritti simili</li></td>
+                </tr>
+                <tr>
+                    <td><li>Avviamento</li></td>
+                </tr>
+                <tr>
+                    <td><li>Immobilizzazioni in corso e acconti</li></td>
+                </tr>
+                <tr>
+                    <td><li>Altre immobilizzazioni immateriali</li></td>
+                </tr>
+                <tr>
+                    <th>2) Materiali</th>
+                </tr>
+                <tr>
+                    <td><li>Terreni e fabbricati</li></td>
+                </tr>
+                <tr>
+                    <td><li>Impianti e macchinari</li></td>
+                </tr>
+                <tr>
+                    <td><li>Attrezzature industriali e commerciali</li></td>
+                </tr>
+                <tr>
+                    <td><li>Altri beni</li></td>
+                </tr>
+                <tr>
+                    <td><li>Immobilizzazioni in corso e acconti</li></td>
+                </tr>
+                <tr>
+                    <th>3) Finanziarie</th>
+                </tr>
+                <tr>
+                    <td><li>Partecipazioni azionarie</li></td>
+                </tr>
+                <tr>
+                    <td><li>Crediti finanziari</li></td>
+                </tr>
+                <tr>
+                    <td><li>Altri titoli</li></td>
+                </tr>
+                <tr>
+                    <td><li>Azioni proprie</li></td>
+                </tr>
+
+                <tr>
+                    <th>C) Attivo circolante</th>
+                </tr>
+                <tr>
+                    <th>1) Rimanenze</th>
+                </tr>
+                <tr>
+                    <td><li>Materie prime</li></td>
+                </tr>
+                <tr>
+                    <td><li>Prodotti in corso di lavorazione</li></td>
+                </tr>
+                <tr>
+                    <td><li>Lavori in corso su ordinazioni</li></td>
+                </tr>
+                <tr>
+                    <td><li>Prodotti finiti e merci</li></td>
+                </tr>
+                <tr>
+                    <td><li>Acconti</li></td>
+                </tr>
+                <tr>
+                    <th>2) Crediti</th>
+                </tr>
+                <tr>
+                    <td><li>Verso clienti</li></td>
+                </tr>
+                <tr>
+                    <td><li>Verso imprese controllate, collegate, controllanti</li></td>
+                </tr>
+                <tr>
+                    <td><li>Verso altri enti</li></td>
+                </tr>
+                <tr>
+                    <th>3) Attività finanziarie non immobilizzate</th>
+                </tr>
+                <tr>
+                    <td><li>Partecipazioni in imprese controllate e collegate</li></td>
+                </tr>
+                <tr>
+                    <td><li>Azioni proprie</li></td>
+                </tr>
+                <tr>
+                    <td><li>Altri titoli</li></td>
+                </tr>
+                <tr>
+                    <th>4) Disponibilità liquide</th>
+                </tr>
+                <tr>
+                    <td><li>Depositi bancari e postali</li></td>
+                </tr>
+                <tr>
+                    <td><li>Assegni</li></td>
+                </tr>
+                <tr>
+                    <td><li>Denaro e valori di cassa</li></td>
+                </tr>
+
+                <tr>
+                    <th>D) Ratei e risconti attivi</th>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+
+                <tr>
+                    <th>PASSIVO</th>
+                </tr>
+
+                <tr>
+                    <th>A) Fondo rischi e oneri</th>
+                </tr>
+
+                <tr>
+                    <th>B) Patrimonio netto</th>
+                </tr>
+                <tr>
+                    <td><li>Capitale sociale</li></td>
+                </tr>
+                <tr>
+                    <td><li>Riserva sovrapprezzo azioni</li></td>
+                </tr>
+                <tr>
+                    <td><li>Riserva di rivalutazione</li></td>
+                </tr>
+                <tr>
+                    <td><li>Riserva legale</li></td>
+                </tr>
+                <tr>
+                    <td><li>Riserva per azioni proprie</li></td>
+                </tr>
+                <tr>
+                    <td><li>Riserve statutarie</li></td>
+                </tr>
+                <tr>
+                    <td><li>Altre riserve</li></td>
+                </tr>
+                <tr>
+                    <td><li>Utili portati a nuovo</li></td>
+                </tr>
+                <tr>
+                    <td><li>Utili dell'esercizio</li></td>
+                </tr>
+                <tr>
+                    <th>C) Fondo TFR</th>
+                </tr>
+                <tr>
+                    <th>D) Debiti</th>
+                </tr>
+                <tr>
+                    <td><li>Obbligazioni</li></td>
+                </tr>
+                <tr>
+                    <td><li>Obbligazioni convertibili</li></td>
+                </tr>
+                <tr>
+                    <td><li>Debiti verso banche</li></td>
+                </tr>
+                <tr>
+                    <td><li>Debiti verso altri finanziatori</li></td>
+                </tr>
+                <tr>
+                    <td><li>Acconti</li></td>
+                </tr>
+                <tr>
+                    <td><li>Debiti verso fornitori</li></td>
+                </tr>
+                <tr>
+                    <td><li>Debiti rappresentati da titoli di credito</li></td>
+                </tr>
+                <tr>
+                    <td><li>Debiti verso imprese controllate, collegate, controllanti</li></td>
+                </tr>
+                <tr>
+                    <td><li>Debiti tributari</li></td>
+                </tr>
+
+                <tr>
+                    <td><li>Debiti verso istituti di previdenza e sicurezza sociale</li></td>
+                </tr>
+                <tr>
+                    <td><li>Altri debiti</li></td>
+                </tr>
+                <tr>
+                    <th>E) Ratei e risconti passivi</th>
+                </tr>
+                </tbody>
+            </table>
+        </center>
+    </div>
+
+    <h3 style="text-align: center">Conto Economico</h3>
+    <div>
+        <center>
+            <table class="display" style="text-align: center">
+                <tbody>
+                <tr>
+                    <th>A) Valore della produzione</th>
+                </tr>
+                <tr>
+                    <td>1) Ricavi dalle vendite delle prestazioni</td>
+                </tr>
+                <tr>
+                    <td>2) Variazione delle rimanenze di prodotti in corso di lavorazione semilavorati e finiti</td>
+                </tr>
+                <tr>
+                    <td>3) Semilavorati e finiti</td>
+                </tr>
+                <tr>
+                    <td>4) Variazione dei lavori in corso di ordinazione</td>
+                </tr>
+                <tr>
+                    <td>5) Incrementi di immobilizzazioni per lavori interni</td>
+                </tr>
+                <tr>
+                    <td>6) Altri ricavi e proventi</td>
+                </tr>
+
+                <tr>
+                    <th>B) Costi della produzione</th>
+                </tr>
+                <tr>
+                    <td>1) Per materie prime, sussidiaria, di consumo e merci</td>
+                </tr>
+                <tr>
+                    <td>2) Per servizi</td>
+                </tr>
+                <tr>
+                    <td>3) Per il godimenti di beni di terzi</td>
+                </tr>
+                <tr>
+                    <td>4) Per il personale</td>
+                </tr>
+                <tr>
+                    <td><li>Salari e stipendi</li></td>
+                </tr>
+                <tr>
+                    <td><li>Oneri speciali</li></td>
+                </tr>
+                <tr>
+                    <td><li>Trattamento di fine rapporto</li></td>
+                </tr>
+                <tr>
+                    <td><li>Trattamento di quiescenza e simili</li></td>
+                </tr>
+                <tr>
+                    <td><li>Altri costi</li></td>
+                </tr>
+                <tr>
+                    <td>5) Ammortamenti e svalutazioni</td>
+                </tr>
+                <tr>
+                    <td><li>Ammortamento delle immobilizzazioni immateriali</li></td>
+                </tr>
+                <tr>
+                    <td><li>Ammortamento delle immobilizzazioni materiali</li></td>
+                </tr>
+                <tr>
+                    <td><li>Altre svalutazioni delle immobilizzazioni</li></td>
+                </tr>
+                <tr>
+                    <td><li>Svalutazioni dei crediti compresi nell'attivo circolante e nelle disponibilità liquide</li></td>
+                </tr>
+                <tr>
+                    <td>6) Variazione delle rimanenze di materie prime, sussidiarie, di consumo e merci</td>
+                </tr>
+                <tr>
+                    <td>7) Accantonamento per rischi</td>
+                </tr>
+                <tr>
+                    <td>8) Altri accantonamenti</td>
+                </tr>
+                <tr>
+                    <td>9) Oneri diversi di gestione</td>
+                </tr>
+
+                <tr>
+                    <th>C) Proventi e oneri finanziari</th>
+                </tr>
+                <tr>
+                    <td>1) Proventi da partecipazione</td>
+                </tr>
+                <tr>
+                    <td>2) Altri proventi finanziari</td>
+                </tr>
+                <tr>
+                    <td><li>Da crediti iscritti nelle immobilizzazioni</li></td>
+                </tr>
+                <tr>
+                    <td><li>Da titoli iscritti nelle immobilizzazioni</li></td>
+                </tr>
+                <tr>
+                    <td><li>Da titoli iscritti nell'attivo circolante</li></td>
+                </tr>
+                <tr>
+                    <td><li>Da proventi diversi dai precedenti</li></td>
+                </tr>
+                <tr>
+                    <td>3) Interessi e altri oneri finanziari</td>
+                </tr>
+
+                <tr>
+                    <th>D) Rettifiche di valore di attività finanziarie</th>
+                </tr>
+                <tr>
+                    <td>1) Rivalutazioni</td>
+                </tr>
+                <tr>
+                    <td><li>Di partecipazione</li></td>
+                </tr>
+                <tr>
+                    <td><li>Di immobilizzazioni finanziarie</li></td>
+                </tr>
+                <tr>
+                    <td><li>Di titoli iscritti nell'attivo circolante</li></td>
+                </tr>
+                <tr>
+                    <td>2) Svalutazioni</td>
+                </tr>
+                <tr>
+                    <td><li>Di partecipazione</li></td>
+                </tr>
+                <tr>
+                    <td><li>Di immobilizzazioni finanziarie</li></td>
+                </tr>
+                <tr>
+                    <td><li>Di titoli iscritti nell'attivo circolante</li></td>
+                </tr>
+
+                <tr>
+                    <th>E) Proventi e oneri strordinari</th>
+                </tr>
+                <tr>
+                    <td>1) Proventi con separata indicazione delle plusvalenze da alienazione</td>
+                </tr>
+                <tr>
+                    <td>2) Oneri con separata indicazione delle minusvalenze da alienazione e delle imposte relative a esercizi precedenti</td>
+                </tr>
+                <tr>
+                    <td>3) Imposte sul reddito dell'esercizio, corrente, differite e anticipate</td>
+                </tr>
+                </tbody>
+            </table>
+        </center>
+    </div>
+</div>
+</body>
+</html>
